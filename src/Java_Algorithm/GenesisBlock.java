@@ -10,7 +10,7 @@ public class GenesisBlock extends Block {
   private final String  NVERSION="QuantChain v1.0"
   public final String pubKey;
   // Constructor for an empty block (e.g., Genesis or placeholder)
-  public GenesisBlock() {
+  public GenesisBlock(String creatorName) {
     super("", new ArrayList<Transaction>, 0, uName); 
     this.gtStamp = ZonedDateTime.now(ZoneId.of("America/Chicago"));
     this.uName=uName;
